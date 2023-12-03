@@ -15,20 +15,16 @@ country_code = 'UK'
 ```
 Add your city and country
 
-line 43
-```
-open_weather_map_api_key = ''
-```
-
 Get your API key from 
 https://home.openweathermap.org/api_keys
 
-Edit ```secrets.py``` with your WIFI details
+Edit ```secrets.py``` with your WIFI details and your Open Weather Map API Key
 
 ```
 WIFI_SSID = 'YOUR SSID'
 WIFI_PASSWORD = 'YOURPSK'
 WIFI_COUNTRY = 'GB'
+API_KEY = 'APIKEY'
 ```
 
 ---
