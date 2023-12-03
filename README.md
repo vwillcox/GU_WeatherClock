@@ -25,3 +25,6 @@ https://home.openweathermap.org/api_keys
 ---
 Special thanks goes to the original icon author
 https://www.dovora.com/resources/weather-icons/
+
+---
+Get your display from Pimoroni : https://shop.pimoroni.com/products/space-unicorns?variant=40842033561683 
