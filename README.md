@@ -27,7 +27,7 @@ WIFI_COUNTRY = 'GB'
 API_KEY = 'APIKEY'
 ```
 
-#In Use
+# In Use
 Whilst the screen is active press the LUX + and - keys (bottom right back) of the display to change the brightness
 
 ---
