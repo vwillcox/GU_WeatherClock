@@ -40,7 +40,7 @@ height = GalacticUnicorn.HEIGHT
 NTP_DELTA = 2208988800
 host = "0.uk.pool.ntp.org"
 
-open_weather_map_api_key = '6d080615e900756fd8624ceebe9bf070'
+open_weather_map_api_key = secrets.API_KEY
 
 def clear_display():
     # does what it says on the tin
