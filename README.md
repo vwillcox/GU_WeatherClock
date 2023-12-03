@@ -9,7 +9,7 @@ Edit '''main.py'''
 
 Line 32 & 33:
 ```
-city = 'MARS
+city = 'MARS'
 country_code = 'UK'
 ```
 Add your city and country
