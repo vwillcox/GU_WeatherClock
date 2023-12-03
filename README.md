@@ -21,3 +21,7 @@ open_weather_map_api_key = ''
 
 Get your API key from 
 https://home.openweathermap.org/api_keys
+
+---
+Special thanks goes to the original icon author
+https://www.dovora.com/resources/weather-icons/
