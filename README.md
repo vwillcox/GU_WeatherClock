@@ -1,6 +1,7 @@
 # GU_WeatherClock
 A Weatrher display and Clock on the Pimoroni Galactic Unicorn
 ![Example](IMG_20231202_161041-EDIT.jpg)
+![Example](IMG20231203143608~2-EDIT.jpg)
 
 # Usage
 Upload everything to your Galactic Unicorn (Using Thony or your choice of tools)
