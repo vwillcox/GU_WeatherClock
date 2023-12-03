@@ -22,6 +22,14 @@ open_weather_map_api_key = ''
 Get your API key from 
 https://home.openweathermap.org/api_keys
 
+Edit ```secrets.py``` with your WIFI details
+
+```
+WIFI_SSID = 'YOUR SSID'
+WIFI_PASSWORD = 'YOURPSK'
+WIFI_COUNTRY = 'GB'
+```
+
 ---
 Special thanks goes to the original icon author
 https://www.dovora.com/resources/weather-icons/
