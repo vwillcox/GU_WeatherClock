@@ -4,7 +4,7 @@ A Weatrher display and Clock on the Pimoroni Galactic Unicorn
 ![Example](IMG20231203143608~2-EDIT.jpg)
 
 # Usage
-Upload everything to your Galactic Unicorn (Using Thony or your choice of tools)
+Upload everything (example example images) to your Galactic Unicorn (Using Thony or your choice of tools)
 
 Edit ```main.py```
 
