@@ -27,6 +27,9 @@ WIFI_COUNTRY = 'GB'
 API_KEY = 'APIKEY'
 ```
 
+#In Use
+Whilst the screen is active press the LUX + and - keys (bottom right back) of the display to change the brightness
+
 ---
 Special thanks goes to the original icon author
 https://www.dovora.com/resources/weather-icons/
