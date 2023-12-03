@@ -29,7 +29,7 @@ MESSAGE_COLOUR = (255, 255, 255)
 BG_COLOUR = graphics.create_pen(0, 0, 0)
 TEXT_COLOUR = graphics.create_pen(50, 0, 255)
 
-city = 'Mars'
+city = 'Colchester'
 country_code = 'UK'
 #example
 #city = 'Lahore'
@@ -37,7 +37,10 @@ country_code = 'UK'
 width = GalacticUnicorn.WIDTH
 height = GalacticUnicorn.HEIGHT
 
-open_weather_map_api_key = '<your_API_Key>'
+NTP_DELTA = 2208988800
+host = "0.uk.pool.ntp.org"
+
+open_weather_map_api_key = '6d080615e900756fd8624ceebe9bf070'
 
 def clear_display():
     # does what it says on the tin
@@ -159,13 +162,19 @@ def redraw_display_if_reqd():
 def redraw_time():
     #sync_time()
     while True:
+        if galactic.is_pressed(GalacticUnicorn.SWITCH_BRIGHTNESS_UP):
+            galactic.adjust_brightness(+0.01)
+
+        if galactic.is_pressed(GalacticUnicorn.SWITCH_BRIGHTNESS_DOWN):
+            galactic.adjust_brightness(-0.01)
+
         #sync_time_if_reqd()
         redraw_display_if_reqd()
         galactic.update(graphics)
         time.sleep(0.1)
             
 #while True:
-galactic.set_brightness(0.5)
+galactic.set_brightness(0.1)
 
 #set_background()
 connect_to_wifi()
