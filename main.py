@@ -23,7 +23,7 @@ utc_offset = 0
 
 WHITE = graphics.create_pen(255, 255, 255)
 BLACK = graphics.create_pen(0, 0, 0)
-BACKGROUND_COLOUR = (10, 0, 96) # Blue
+BACKGROUND_COLOUR = graphics.create_pen(10, 0, 96) # Blue
 OUTLINE_COLOUR = (0, 0, 0)
 MESSAGE_COLOUR = (255, 255, 255)
 BG_COLOUR = graphics.create_pen(0, 0, 0)
@@ -91,16 +91,6 @@ def outline_text(text, x, y):
     graphics.set_pen(WHITE)
     graphics.text(text, x, y, -1, 1)
     
-def set_background():
-   # global cheercolor
-   graphics.set_pen(graphics.create_pen(10,0,96))
-   for x in range(14,width):
-      for y in range(0,height):
-         graphics.pixel(x, y)
-    
-
-
-
 def redraw_weather():
     while True:
         #set your unique OpenWeatherMap.org URL
@@ -117,7 +107,7 @@ def redraw_weather():
         raw_temperature = weather_data.json().get('main').get('temp')-273.15
         temperature = str(round(raw_temperature)) + '°'
         print(temperature)
-        graphics.set_pen(graphics.create_pen(10,0,96))
+        graphics.set_pen(BACKGROUND_COLOUR)
         for x in range(11,30):
             for y in range(0,height):
                 graphics.pixel(x, y)
@@ -144,7 +134,7 @@ def redraw_display_if_reqd():
             hour -= 24
 
         #set_background()
-        graphics.set_pen(graphics.create_pen(10,0,96))
+        graphics.set_pen(BACKGROUND_COLOUR)
         for x in range(30,width):
             for y in range(0,height):
                 graphics.pixel(x, y)
@@ -167,7 +157,13 @@ def redraw_time():
 
         if galactic.is_pressed(GalacticUnicorn.SWITCH_BRIGHTNESS_DOWN):
             galactic.adjust_brightness(-0.01)
-
+            
+        if  galactic.is_pressed(GalacticUnicorn.SWITCH_A):
+            galactic.set_brightness(0)
+        
+        if galactic.is_pressed(GalacticUnicorn.SWITCH_B):
+            galactic.set_brightness(0.5)
+        
         #sync_time_if_reqd()
         redraw_display_if_reqd()
         galactic.update(graphics)
@@ -180,4 +176,3 @@ galactic.set_brightness(0.1)
 connect_to_wifi()
 second_thread = _thread.start_new_thread(redraw_time, ())
 redraw_weather()
-
